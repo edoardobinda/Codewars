@@ -26,4 +26,4 @@ function countSheeps(arrayOfSheep) {
         
     }
     return arrayOfSheep.length;
-    }
+    } 
