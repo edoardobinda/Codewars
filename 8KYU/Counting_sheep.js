@@ -15,15 +15,16 @@ Hint: Don't forget to check for bad values like null/undefined
 FUNDAMENTALSARRAYS*/
 
 function countSheeps(arrayOfSheep) {
-    let vuoto = [];
-    for (let i = 0; i < arrayOfSheep.length; i++) {
-       
-       arrayOfSheep = arrayOfSheep.filter(function(item){
-            return item !== false;
+    
+        arrayOfSheep = arrayOfSheep.filter(function(item){
+        if (item != undefined && item != null){  
+        return item !== false;
+        }
         })
         
         console.log(arrayOfSheep);
-        
-    }
+        console.log(arrayOfSheep.length)
+    
     return arrayOfSheep.length;
-    } 
+    
+    }
